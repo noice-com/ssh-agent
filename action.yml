@@ -7,7 +7,7 @@ inputs:
     ssh-auth-sock:
         description: "Where to place the SSH Agent auth socket"
 runs:
-    using: "node16"
+    using: "node20"
     main: "dist/index.js"
     post: "dist/cleanup.js"
     post-if: "always()"
